@@ -34,7 +34,7 @@ myFeedback.service('feedbackService',['$http',function($http){
 
   this.sendFeedback = function(name, email, feedback) {
     $http({
-          url: 'modules/dialog/feedback/feedback.php',
+          url: 'modules/Dialog/Feedback/Feedback.php',
           method: "POST",
           // withCredentials: true,
           // headers : {'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'},

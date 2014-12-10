@@ -1,0 +1,22 @@
+<div class="modal-header">
+  <h1 class="modal-title"><span class="glyphicon glyphicon-star"></span>Wir wollen mit Dir sprechen!</h1>
+</div>
+<div class="left feedback"></div>
+<div class="modal-body">
+  <ng-form name="feedbackDialog" novalidate role="form">
+    <div class="form-group input-group-lg" ng-class="{true: has-error}[feedbackDialog.username.$dirty && feedbackDialog.username.$invalid]">
+      <label class="control-label" for="course">Name:</label>
+      <input type="text" class="form-control feedback" name="username" id="username" ng-model="user.name" ng-keyup="hitEnter($event)" required>
+      <span class="help-block">Wie heißt Du?</span>
+    </div>
+    <div class="form-group input-group-lg" ng-class="{true: has-error}[feedbackDialog.email.$dirty && feedbackDialog.email.$invalid]">
+      <label class="control-label" for="course">Email:</label>
+      <input type="email" class="form-control feedback" name="email" id="email" ng-model="user.email" ng-keyup="hitEnter($event)" required>
+      <span class="help-block">Deine Emailadresse</span>
+    </div>
+  </ng-form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+  <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="(feedbackDialog.$dirty && feedbackDialog.$invalid) || feedbackDialog.$pristine">Save</button>
+</div>
