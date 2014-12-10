@@ -1,0 +1,43 @@
+div.feedback {
+  width: 25%;
+  height: 300px;
+  display: block;
+  position: relative;
+}
+
+div.feedback::after {
+  content: "";
+  background: url('feedback.jpg') no-repeat;
+  background-size: Auto 260px;
+  opacity: 0.5;
+  top: 10px;
+  border-radius: 10px;
+  left: 20px;
+  bottom: 30px;
+  right: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+input.feedback{
+  width:70%;
+}
+
+aside.feedback-sidebar {
+  position:fixed;
+  top:25%;
+  left: -2em;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: rgb(102, 175, 34);
+  padding: 1em;
+  border-radius: 5px 5px 0 0;
+  color: white;
+}
+
+aside.feedback-sidebar:hover {
+  background: rgb(75, 125, 46);
+}

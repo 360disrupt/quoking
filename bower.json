@@ -1,0 +1,35 @@
+{
+  "name": "Quoking",
+  "version": "0.0.0",
+  "description": "Free the world from smoking",
+  "main": "?",
+  "keywords": [
+    "quit",
+    "smoking",
+    "no",
+    "smoking"
+  ],
+  "authors": [
+    "Andreas Geißinger"
+  ],
+  "license": "MIT",
+  "homepage": "http://quoking.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.13",
+    "angular": "~1.3.5",
+    "components-font-awesome": "~4.2.0",
+    "angular-bootstrap": "~0.12.0",
+    "angular-sanitize": "~1.3.6",
+    "angular-translate": "~2.5.0",
+    "angular-dialog-service": "~5.2.6",
+    "angular-socialshare": "~0.0.6"
+  }
+}
