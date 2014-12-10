@@ -1,6 +1,6 @@
-<html ng-app="App" id="App">
+<html>
 <head>
-	<title>360-Disrupt</title>
+	<title>Quoking</title>
 	<!-- Main Style & Bootstrap-->
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
@@ -55,7 +55,7 @@
 		<link rel="stylesheet" href="modules/Dialog/Feedback/Feedback.css">
 	<!-- EOF COMPILE -->
 </head>
-<body>
+<body ng-app="App" id="App" ng-controller="RootCtrl as rootCtrl" ng-mouseleave="rootCtrl.exit()">
 <div id="wrap">
 	<head-row></head-row>
 	<ui-view></ui-view>

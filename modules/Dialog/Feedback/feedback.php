@@ -7,7 +7,7 @@ require_once(__ROOT__.'/config.php');
 $errors     = array();    // array to hold validation errors
 $rows = array();          // sql-rows
 $message = '';    // string to hold success message
-$sendToEmail ='geissinger@360-disrupt.de';
+$sendToEmail ='hello@quoking.com';
 
 
 if($_SERVER['REQUEST_METHOD']=="POST")
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD']=="POST")
   //If no errors all fields fileld in
   if(count($errors)==0)
     {
-      $subject="Feedback Anfrage von ".$email." [Request]";
+      $subject="Feedback Anfrage von ".$email." [Request, Quoking]";
       $body='Hallo Andi, <br/><br/><b>'.$name.'</b> will gerne mit Dir ein Feedbackgespräch haben.<br/><br/>Vielen Dank,<br/>Dein Server';
       $signature='<p style="font-size:small; color:grey;">--<br>Du willst dabei sein wie man Unternehmen aufbaut? Unser Praktikum Startup-Aufbau, Analyse von Förderungen und Anwendung in der Praxis: http://bit.ly/KBBAt0 <br>--Eisbach Solutions UG (haftungsbeschränkt)<br/>St. Anna Str. 12<br/>80538 München<br/>Geschäftsführer: Andreas Geißinger<br/>HRB 179040<br/>Steuernummer: 143/132/82083<br/>Telefon: 089/12196611</p>';
 
@@ -44,8 +44,8 @@ if($_SERVER['REQUEST_METHOD']=="POST")
       send_mail($sendToEmail,$subject,$body.$signature, $email);
 
       //Mail an Nutzer
-      $subject="Deine Anfrage an 360-Disrupt wurde übermittelt";
-      $body='Hallo '.$name.', <br/><br/>Deine Deine Anfrage wurde übermittelt!<br/><br/>Vielen Dank,<br/>Andi CEO von 360-Disrupt';
+      $subject="Deine Anfrage an Quoking wurde übermittelt";
+      $body='Hallo '.$name.', <br/><br/>Deine Deine Anfrage wurde übermittelt!<br/><br/>Vielen Dank,<br/>Andi CEO von Quoking';
       $signature='<p style="font-size:small; color:grey;">--<br>Du willst dabei sein wie man Unternehmen aufbaut? Unser Praktikum Startup-Aufbau, Analyse von Förderungen und Anwendung in der Praxis: http://bit.ly/KBBAt0 <br>--Eisbach Solutions UG (haftungsbeschränkt)<br/>St. Anna Str. 12<br/>80538 München<br/>Geschäftsführer: Andreas Geißinger<br/>HRB 179040<br/>Steuernummer: 143/132/82083<br/>Telefon: 089/12196611</p>';
 
       $headers   = array();
