@@ -1,5 +1,6 @@
 <?php
-define('__ROOT__', dirname(dirname(__FILE__)));
+define('__ROOT__', $_SERVER['DOCUMENT_ROOT'] . '/../' . '/quoking.com');
+echo __ROOT__;
 require_once(__ROOT__.'/config.php');
 
 //Variables ===========================================================
