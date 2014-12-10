@@ -85,7 +85,7 @@ module.directive('footRow', function(){
 //   $FB.init('475092975961783');
 // });
 
-PROD
+//PROD
 module.run(function(user, $FB) {
   user.init({ appId: '548865ee78c79' });
   $FB.init('475092975961783');
