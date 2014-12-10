@@ -1,6 +1,5 @@
 <?php
-//define('__ROOT__', dirname(dirname(__FILE__)));
-define('__ROOT__', $_SERVER["DOCUMENT_ROOT"].'/360disrupt');
+define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/config.php');
 
 //Variables ===========================================================
