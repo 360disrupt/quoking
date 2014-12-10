@@ -17,7 +17,7 @@ myDialog.service('dialogService',['$timeout','dialogs', 'feedbackService', funct
           });
           break;
         case 'feedback':
-          var dlg = dialogs.create('modules/dialog/feedback/feedback.html','feedbackCtrl',{},{size:'lg',keyboard: true,backdrop: true,windowClass: 'my-class'});
+          var dlg = dialogs.create('modules/Dialog/Feedback/Feedback.html','feedbackCtrl',{},{size:'lg',keyboard: true,backdrop: true,windowClass: 'my-class'});
           dlg.result.then(function(user){
             feedbackService.sendFeedback(user.name,user.email);
             dialogs.notify('Nachricht gesendet', 'Wir haben Deine Anfrage erhalten');
