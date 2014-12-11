@@ -39,9 +39,11 @@ h2, .h2 {
 font-size: 2em;
 }
 h3, .h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
 }
+
+p, a {font-size: 1.2em;}
 
 a {
   color:rgb(35, 179, 16);
@@ -96,6 +98,10 @@ p p {/*Editor adds nested p tags*/
 
 .clear-both {
  clear:both;
+}
+
+.white-bg {
+  background: white;
 }
 
 /*Buttons*/
@@ -180,6 +186,15 @@ display:inline;
   padding: 1em;
 }
 
+.teaser-img {
+  border-radius: 10px;
+  margin: 2em;
+}
+
+.rounded {
+  border-radius: 10px;
+ }
+
 a.cta, a.facebook  {
   width: 100%;
   padding: 0.5em;
@@ -197,10 +212,25 @@ a.facebook {font-size: 1.2em;}
   background-color: white;
   border-radius: 10px;
   padding: 2em;
+  overflow:auto;
 }
 
 .text-center {
   text-align: center;
+}
+
+@media screen and (max-width:1200px){
+  aside {
+    display:none;
+  }
+  .container {
+    width:100%;
+  }
+
+  .non-smoker {
+    display:none;
+  }
+
 }
 
 @media only screen and (max-width:540px){

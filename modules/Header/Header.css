@@ -4,6 +4,7 @@
 
 .navbar {
   border-color:white;
+  border-bottom: solid darkgrey 2px;
 }
 
 .navbar ul {
@@ -13,7 +14,7 @@
   font-size: 2em;
   line-height: 2.5em;
   height: 2.5em;
-  margin-left: 140px
+  margin-left: 95px
 }
 
 .navbar li {
@@ -36,10 +37,12 @@
 #logo {
   display: block;
   margin-top: 0.5em;
+  margin-left: 25px;
 }
 
 #site-header {
   margin-bottom: 5em;
+
 }
 
 @media only screen and (max-width:540px){

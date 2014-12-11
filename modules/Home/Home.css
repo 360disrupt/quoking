@@ -22,4 +22,9 @@ ul.arguments {
   font-size: 1.3em;
 }
 
+@media screen and (max-width:1200px){
+  .non-smoker {
+    display:none;
+  }
 
+}
