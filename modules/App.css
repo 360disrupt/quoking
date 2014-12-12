@@ -63,6 +63,21 @@ p p {/*Editor adds nested p tags*/
   font-size: 1em;
 }
 
+.div-table{
+  display:table;         
+  width:auto;                         
+  border-spacing:5px;/*cellspacing:poor IE support for  this*/
+}
+.div-table-row{
+  display:table-row;
+  width:auto;
+  clear:both;
+}
+.div-table-col{
+  float:left;/*fix for  buggy browsers*/
+  display:table-column;                   
+}
+
 ::selection {
   background: #23d10c;
   color: #FFFFFF;
@@ -226,11 +241,6 @@ a.facebook {font-size: 1.2em;}
   .container {
     width:100%;
   }
-
-  .non-smoker {
-    display:none;
-  }
-
 }
 
 @media only screen and (max-width:540px){

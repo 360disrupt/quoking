@@ -17,12 +17,27 @@
   background: url('/modules/Home/images/quit-smoking.jpg') no-repeat;
 }
 
+.non-smoker>img {
+    width:100%;
+  }
+
+.benefit {
+  margin-top: 2em;
+}
+
 ul.arguments {
   text-align: left;
   font-size: 1.3em;
 }
 
 @media screen and (max-width:1200px){
+  .non-smoker {
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+@media screen and (max-width:768px){
   .non-smoker {
     display:none;
   }
