@@ -22,7 +22,7 @@ module.controller('RootCtrl', ['dialogService', '$rootScope', function(dialogSer
 }]);
 
 //CONFIG
-module.config(function($urlRouterProvider, $stateProvider) {
+module.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/share');
   $stateProvider
   	.state('home',{
@@ -59,6 +59,8 @@ module.config(function($urlRouterProvider, $stateProvider) {
         public: true
       } 
   	});
+   // use the HTML5 History API
+    $locationProvider.html5Mode(true);
 });
 
 
